@@ -9,7 +9,7 @@ This library helps to handle validation process for large input forms containing
 1. Copy `FFCrimsonUnderscore` to your project
 2. Add
 ```objective-c
-#import `FFCrimsonUnderscore.h` file
+#import "FFCrimsonUnderscore.h" file
 ```
 
 ---------------
@@ -88,4 +88,4 @@ Delegate implementation:
 }
 ```
 
-`FFValidationViewClientDelegate` protocol provides few other methods which you could use to get more information about validation process. But in most cases it's enough to only implement the method above.
+`FFValidationClientDelegate` protocol provides few other methods which you could use to get more information about validation process. But in most cases it's enough to only implement the method above.
