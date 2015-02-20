@@ -22,8 +22,8 @@ Example:
 
 ```objective-c
 NSArray *viewsToValidate = @[
-  _textFieldEmail,
-  _textFieldPassword
+    _textFieldEmail,
+    _textFieldPassword
 ];
 
 FFValidationClient *validationClient = [[FFValidationClient alloc] initWithViews:viewsToValidate];
@@ -38,53 +38,53 @@ Delegate implementation:
 ```objective-c
 - (BOOL)validationClient:(FFValidationClient *)validationClient isViewValid:(UIView *)view errorAttributedText:(NSAttributedString **)errorAttributedText
 {
-  NSDictionary *attributesForValidationErrorText = {
-  NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:12.0f],
-  NSForegroundColorAttributeName: [UIColor redColor]
-  };
+    NSDictionary *attributesForValidationErrorText = {
+        NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:12.0f],
+        NSForegroundColorAttributeName: [UIColor redColor]
+    };
 
-  if(view == _textFieldEmail)
-  {
-    NSString *textToValidate = _textFieldEmail.text;
-
-    static NSString *emailRegularExpression = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-
-    NSPredicate *emailPredicate = [NSPredicate predicateWithFormat:@"self matches %@",
-      emailRegularExpression];
-
-    BOOL isValidEmail = [emailPredicate evaluateWithObject:textToValidate];
-
-    if(!isValidEmail)
+    if(view == _textFieldEmail)
     {
-      *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Wrong email."
-                                                             attributes:attributesForValidationErrorText];
+        NSString *textToValidate = _textFieldEmail.text;
+
+        static NSString *emailRegularExpression = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+
+        NSPredicate *emailPredicate = [NSPredicate predicateWithFormat:@"self matches %@",
+            emailRegularExpression];
+
+        BOOL isValidEmail = [emailPredicate evaluateWithObject:textToValidate];
+
+        if(!isValidEmail)
+        {
+            *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Wrong email."
+                                                                   attributes:attributesForValidationErrorText];
+        }
+
+        return isValidEmail;
     }
-
-    return isValidEmail;
-  }
-  else if(view == _textFieldPassword)
-  {
-    NSString *textToValidate = _textFieldPassword.text;
-
-    static NSUInteger minLengthForPassword = 8;
-
-    BOOL isValidPassword = textToValidate.length >= minLengthForPassword;
-
-    if(!isValidPassword)
+    else if(view == _textFieldPassword)
     {
-      NSString *errorText = [NSString stringWithFormat:@"Password cannot be less than %d symbols.",
-        minLengthForPassword];
+        NSString *textToValidate = _textFieldPassword.text;
 
-      *errorAttributedText = [[NSAttributedString alloc] initWithString:errorText
-        attributes:attributesForValidationErrorText];
+        static NSUInteger minLengthForPassword = 8;
+
+        BOOL isValidPassword = textToValidate.length >= minLengthForPassword;
+
+        if(!isValidPassword)
+        {
+            NSString *errorText = [NSString stringWithFormat:@"Password cannot be less than %d symbols.",
+                minLengthForPassword];
+
+            *errorAttributedText = [[NSAttributedString alloc] initWithString:errorText
+                                                                   attributes:attributesForValidationErrorText];
+        }
+
+        return isValidPassword;
     }
-
-    return isValidPassword;
-  }
-  else
-  {
-    return YES;
-  }
+    else
+    {
+        return YES;
+    }
 }
 ```
 
