@@ -117,7 +117,7 @@
     }
     else
     {
-        for(NSInteger i = index; i >= _views.count; i++)
+        for(NSInteger i = index; i < _views.count; i++)
         {
             blockForStep(i);
         }

@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController">
             <connections>
+                <outlet property="textFieldEmail" destination="chV-hD-h8S" id="gB2-7M-gHo"/>
+                <outlet property="textFieldPassword" destination="JA6-uZ-MAj" id="3ZS-nl-E56"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,23 +17,57 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LaunchViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67N-Ux-Bjq">
-                    <rect key="frame" x="8" y="289" width="584" height="21"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chV-hD-h8S">
+                    <rect key="frame" x="8" y="109" width="584" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="cby-yJ-zXV"/>
+                        <constraint firstAttribute="height" constant="30" id="m4t-Ip-TQw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-Td-LEx">
+                    <rect key="frame" x="8" y="80" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="wao-1Q-1bo"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPa-xm-OV3">
+                    <rect key="frame" x="8" y="177" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2dr-kD-hwm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JA6-uZ-MAj">
+                    <rect key="frame" x="8" y="206" width="584" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="QgJ-6U-CRt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="67N-Ux-Bjq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="C5i-oU-n7R"/>
-                <constraint firstAttribute="trailing" secondItem="67N-Ux-Bjq" secondAttribute="trailing" constant="8" id="MlW-pu-u6F"/>
-                <constraint firstAttribute="centerY" secondItem="67N-Ux-Bjq" secondAttribute="centerY" id="sNa-wH-w7I"/>
+                <constraint firstItem="QPa-xm-OV3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1cD-Lk-LiG"/>
+                <constraint firstAttribute="trailing" secondItem="Mb8-Td-LEx" secondAttribute="trailing" constant="8" id="ACg-wE-M43"/>
+                <constraint firstItem="chV-hD-h8S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MXj-m7-etd"/>
+                <constraint firstItem="chV-hD-h8S" firstAttribute="top" secondItem="Mb8-Td-LEx" secondAttribute="bottom" constant="8" id="OA5-GU-Lij"/>
+                <constraint firstAttribute="trailing" secondItem="JA6-uZ-MAj" secondAttribute="trailing" constant="8" id="OoG-PV-SYx"/>
+                <constraint firstItem="QPa-xm-OV3" firstAttribute="top" secondItem="chV-hD-h8S" secondAttribute="bottom" constant="38" id="PPS-Bi-pu1"/>
+                <constraint firstItem="Mb8-Td-LEx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ZTi-NL-BT3"/>
+                <constraint firstItem="Mb8-Td-LEx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="cK9-6S-KW1"/>
+                <constraint firstItem="JA6-uZ-MAj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vDG-34-Wzb"/>
+                <constraint firstAttribute="trailing" secondItem="QPa-xm-OV3" secondAttribute="trailing" constant="8" id="wXB-Tc-Txh"/>
+                <constraint firstAttribute="trailing" secondItem="chV-hD-h8S" secondAttribute="trailing" constant="8" id="xFx-vR-O55"/>
+                <constraint firstItem="JA6-uZ-MAj" firstAttribute="top" secondItem="QPa-xm-OV3" secondAttribute="bottom" constant="8" id="y4n-Pa-wJZ"/>
             </constraints>
-            <point key="canvasLocation" x="365" y="386"/>
+            <point key="canvasLocation" x="174" y="381"/>
         </view>
     </objects>
 </document>

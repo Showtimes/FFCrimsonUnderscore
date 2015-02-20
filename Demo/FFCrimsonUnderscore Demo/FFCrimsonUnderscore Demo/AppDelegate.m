@@ -17,9 +17,6 @@
 
 @implementation AppDelegate
 
-#pragma mark Class variables & properties
-
-
 #pragma mark Class methods
 
 
@@ -32,11 +29,7 @@
 {
 }
 
-
-#pragma mark Outlets
-
-
-#pragma mark Variables & properties
+#pragma mark Property accessors
 
 
 #pragma mark Public methods

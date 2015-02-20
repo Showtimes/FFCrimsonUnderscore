@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LaunchViewController : UIViewController
+#import "FFCrimsonUnderscore.h"
+
+@interface LaunchViewController : UIViewController<FFValidationClientDelegate, UITextFieldDelegate>
 
 @end

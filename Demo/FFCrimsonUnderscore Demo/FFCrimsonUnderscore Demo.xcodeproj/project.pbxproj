@@ -47,6 +47,7 @@
 		69C8939E1A97C9280060D308 /* FFValidationClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFValidationClientDelegate.h; sourceTree = "<group>"; };
 		69C8939F1A97C9280060D308 /* UIView+Decorations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Decorations.h"; sourceTree = "<group>"; };
 		69C893A01A97C9280060D308 /* UIView+Decorations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Decorations.m"; sourceTree = "<group>"; };
+		69C893A31A97CEE50060D308 /* FFCrimsonUnderscore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCrimsonUnderscore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +155,7 @@
 		69C8939B1A97C9280060D308 /* FFCrimsonUnderscore */ = {
 			isa = PBXGroup;
 			children = (
+				69C893A31A97CEE50060D308 /* FFCrimsonUnderscore.h */,
 				69C8939C1A97C9280060D308 /* FFValidationClient.h */,
 				69C8939D1A97C9280060D308 /* FFValidationClient.m */,
 				69C8939E1A97C9280060D308 /* FFValidationClientDelegate.h */,
