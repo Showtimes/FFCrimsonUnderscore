@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "FFCrimsonUnderscore.h"
+@interface ViewController () <FFValidationClientDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (weak, nonatomic) IBOutlet UITextField *lastName;
+@property (weak, nonatomic) IBOutlet UITextField *email;
 
-@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) FFValidationClient *client;
 
 @end
 
@@ -16,7 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *viewsNecessitatingValidation = @[self.firstName, self.lastName, self.email, self.password];
+    _client = [[FFValidationClient alloc] initWithViews:viewsNecessitatingValidation];
+    _client.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
