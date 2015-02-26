@@ -1,7 +1,7 @@
 
 # FFCrimsonUnderscore
 
-This library helps to handle validation process for large input forms containing UITextFields, UITextViews and any other UI elements which you want to validate.
+This library aims to help to handle validation process for large input forms comprised of UITextFields, UITextViews and any other UI elements whose text requires any sort of validation. It is designed to work in concert with the methods available in UITextFieldDelegate—creating a "live" and "realtime" validation experience aesthetic.
 
 ---------------
 
@@ -88,4 +88,4 @@ Delegate implementation:
 }
 ```
 
-`FFValidationClientDelegate` protocol provides few other methods which you could use to get more information about validation process. But in most cases it's enough to only implement the method above.
+`FFValidationClientDelegate` protocol provides a few other methods that one could use to finer tune their validation process (see demo src for usage). In most cases, however, it's enough to only implement the method above.
