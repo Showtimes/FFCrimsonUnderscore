@@ -29,14 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		69C893601A97C5DB0060D308 /* FFCrimsonUnderscore Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFCrimsonUnderscore Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C893601A97C5DB0060D308 /* FFCrimsonUnderscoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFCrimsonUnderscoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C893641A97C5DB0060D308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69C893651A97C5DB0060D308 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69C893671A97C5DB0060D308 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69C893681A97C5DB0060D308 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		69C893701A97C5DB0060D308 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		69C893731A97C5DB0060D308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		69C893791A97C5DB0060D308 /* FFCrimsonUnderscore DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFCrimsonUnderscore DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C893791A97C5DB0060D308 /* FFCrimsonUnderscoreDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFCrimsonUnderscoreDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C8937E1A97C5DB0060D308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69C8937F1A97C5DB0060D308 /* FFCrimsonUnderscore_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCrimsonUnderscore_DemoTests.m; sourceTree = "<group>"; };
 		69C8938B1A97C6120060D308 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		69C893611A97C5DB0060D308 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69C893601A97C5DB0060D308 /* FFCrimsonUnderscore Demo.app */,
-				69C893791A97C5DB0060D308 /* FFCrimsonUnderscore DemoTests.xctest */,
+				69C893601A97C5DB0060D308 /* FFCrimsonUnderscoreDemo.app */,
+				69C893791A97C5DB0060D308 /* FFCrimsonUnderscoreDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69C8935F1A97C5DB0060D308 /* FFCrimsonUnderscore Demo */ = {
+		69C8935F1A97C5DB0060D308 /* FFCrimsonUnderscoreDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69C893831A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscore Demo" */;
+			buildConfigurationList = 69C893831A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscoreDemo" */;
 			buildPhases = (
 				69C8935C1A97C5DB0060D308 /* Sources */,
 				69C8935D1A97C5DB0060D308 /* Frameworks */,
@@ -181,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = "FFCrimsonUnderscore Demo";
+			name = FFCrimsonUnderscoreDemo;
 			productName = "FFCrimsonUnderscore Demo";
-			productReference = 69C893601A97C5DB0060D308 /* FFCrimsonUnderscore Demo.app */;
+			productReference = 69C893601A97C5DB0060D308 /* FFCrimsonUnderscoreDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		69C893781A97C5DB0060D308 /* FFCrimsonUnderscore DemoTests */ = {
+		69C893781A97C5DB0060D308 /* FFCrimsonUnderscoreDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69C893861A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscore DemoTests" */;
+			buildConfigurationList = 69C893861A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscoreDemoTests" */;
 			buildPhases = (
 				69C893751A97C5DB0060D308 /* Sources */,
 				69C893761A97C5DB0060D308 /* Frameworks */,
@@ -199,9 +199,9 @@
 			dependencies = (
 				69C8937B1A97C5DB0060D308 /* PBXTargetDependency */,
 			);
-			name = "FFCrimsonUnderscore DemoTests";
+			name = FFCrimsonUnderscoreDemoTests;
 			productName = "FFCrimsonUnderscore DemoTests";
-			productReference = 69C893791A97C5DB0060D308 /* FFCrimsonUnderscore DemoTests.xctest */;
+			productReference = 69C893791A97C5DB0060D308 /* FFCrimsonUnderscoreDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 69C8935B1A97C5DB0060D308 /* Build configuration list for PBXProject "FFCrimsonUnderscore Demo" */;
+			buildConfigurationList = 69C8935B1A97C5DB0060D308 /* Build configuration list for PBXProject "FFCrimsonUnderscoreDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,8 +235,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69C8935F1A97C5DB0060D308 /* FFCrimsonUnderscore Demo */,
-				69C893781A97C5DB0060D308 /* FFCrimsonUnderscore DemoTests */,
+				69C8935F1A97C5DB0060D308 /* FFCrimsonUnderscoreDemo */,
+				69C893781A97C5DB0060D308 /* FFCrimsonUnderscoreDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,7 +287,7 @@
 /* Begin PBXTargetDependency section */
 		69C8937B1A97C5DB0060D308 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 69C8935F1A97C5DB0060D308 /* FFCrimsonUnderscore Demo */;
+			target = 69C8935F1A97C5DB0060D308 /* FFCrimsonUnderscoreDemo */;
 			targetProxy = 69C8937A1A97C5DB0060D308 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -389,7 +389,7 @@
 				INFOPLIST_FILE = "FFCrimsonUnderscore Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FFCrimsonUnderscoreDemo;
 			};
 			name = Debug;
 		};
@@ -400,7 +400,7 @@
 				INFOPLIST_FILE = "FFCrimsonUnderscore Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FFCrimsonUnderscoreDemo;
 			};
 			name = Release;
 		};
@@ -418,7 +418,7 @@
 				);
 				INFOPLIST_FILE = "FFCrimsonUnderscore DemoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FFCrimsonUnderscoreDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFCrimsonUnderscore Demo.app/FFCrimsonUnderscore Demo";
 			};
 			name = Debug;
@@ -433,7 +433,7 @@
 				);
 				INFOPLIST_FILE = "FFCrimsonUnderscore DemoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FFCrimsonUnderscoreDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFCrimsonUnderscore Demo.app/FFCrimsonUnderscore Demo";
 			};
 			name = Release;
@@ -441,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69C8935B1A97C5DB0060D308 /* Build configuration list for PBXProject "FFCrimsonUnderscore Demo" */ = {
+		69C8935B1A97C5DB0060D308 /* Build configuration list for PBXProject "FFCrimsonUnderscoreDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69C893811A97C5DB0060D308 /* Debug */,
@@ -450,21 +450,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69C893831A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscore Demo" */ = {
+		69C893831A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscoreDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69C893841A97C5DB0060D308 /* Debug */,
 				69C893851A97C5DB0060D308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		69C893861A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscore DemoTests" */ = {
+		69C893861A97C5DB0060D308 /* Build configuration list for PBXNativeTarget "FFCrimsonUnderscoreDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69C893871A97C5DB0060D308 /* Debug */,
 				69C893881A97C5DB0060D308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
