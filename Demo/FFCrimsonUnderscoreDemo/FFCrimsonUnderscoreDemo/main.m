@@ -1,9 +1,9 @@
 //
 //  main.m
-//  FFCrimsonUnderscore Demo
+//  FFCrimsonUnderscoreDemo
 //
-//  Created by Igor Matyushkin on 20.02.15.
-//  Copyright (c) 2015 FindandForm. All rights reserved.
+//  Created by James Graham on 2/26/15.
+//  Copyright (c) 2015 Find & Form. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

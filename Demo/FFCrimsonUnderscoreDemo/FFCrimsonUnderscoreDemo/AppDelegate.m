@@ -1,15 +1,12 @@
 //
 //  AppDelegate.m
-//  FFCrimsonUnderscore Demo
+//  FFCrimsonUnderscoreDemo
 //
-//  Created by Igor Matyushkin on 20.02.15.
-//  Copyright (c) 2015 FindandForm. All rights reserved.
+//  Created by James Graham on 2/26/15.
+//  Copyright (c) 2015 Find & Form. All rights reserved.
 //
-
-#import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
-#import "LaunchViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,53 +14,9 @@
 
 @implementation AppDelegate
 
-#pragma mark Class methods
-
-
-#pragma mark Initializers
-
-
-#pragma mark Deinitializer
-
-- (void)dealloc
-{
-}
-
-#pragma mark Property accessors
-
-
-#pragma mark Public methods
-
-
-#pragma mark Private methods
-
-
-#pragma mark Actions
-
-
-#pragma mark Protocol methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Create window
-    
-    CGRect frameForWindow = [UIScreen mainScreen].bounds;
-    _window = [[UIWindow alloc] initWithFrame:frameForWindow];
-    _window.backgroundColor = [UIColor whiteColor];
-    [_window makeKeyAndVisible];
-    
-    
-    // Create launch view controller
-    
-    LaunchViewController *launchViewController = [[LaunchViewController alloc] init];
-    
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:launchViewController];
-    navigationController.navigationBarHidden = NO;
-    
-    _window.rootViewController = navigationController;
-    
-    
-    // Return result
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
