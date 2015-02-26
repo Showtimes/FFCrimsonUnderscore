@@ -13,10 +13,18 @@
 @property (weak, nonatomic) IBOutlet UITextField *lastName;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+
+@property (weak, nonatomic) IBOutlet UIView *lineFirstName;
+@property (weak, nonatomic) IBOutlet UIView *lineLastName;
+@property (weak, nonatomic) IBOutlet UIView *lineEmail;
+@property (weak, nonatomic) IBOutlet UIView *linePassword;
+
 @property (strong, nonatomic) FFValidationClient *client;
 
 //meta properties
 @property (strong, nonatomic) NSArray *fields;
+@property (strong, nonatomic) NSArray *lines;
+
 @end
 
 @implementation ViewController
@@ -26,6 +34,13 @@
         _fields = [NSArray arrayWithObjects: self.firstName, self.lastName, self.email, self.password, nil];
     }
     return _fields;
+}
+
+- (NSArray *)lines{
+    if (!_lines) {
+        _lines = [NSArray arrayWithObjects:self.lineFirstName, self.lineLastName, self.lineEmail, self.linePassword, nil];
+    }
+    return _lines;
 }
 
 - (void)viewDidLoad {
@@ -84,7 +99,7 @@
         }
         
         if ([self.firstName.text isEqualToString:@"James"]){
-            *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Mine, too!"
+            *errorAttributedText = [[NSAttributedString alloc] initWithString:@"There can only be one!!"
                                                                    attributes:@{
                                                                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:8.0f],
                                                                                 NSForegroundColorAttributeName: [UIColor blueColor]
@@ -95,7 +110,7 @@
     else if ([view isEqual:self.lastName]){
         //conditions for last name
         
-        if (self.lastName.text == 0) {
+        if (self.lastName.text.length == 0) {
             *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Last name cannot be empty"
                                                                    attributes:@{
                                                                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:8.0f],
@@ -122,7 +137,7 @@
         }
         
         if([self.email.text isEqualToString:@"wittedhaddock@gmail.com"]){
-            *errorAttributedText = [[NSAttributedString alloc] initWithString:@"No Way! Same here!"
+            *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Not true!"
                                                                    attributes:@{
                                                                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:8.0f],
                                                                                 NSForegroundColorAttributeName: [UIColor blueColor]
@@ -136,7 +151,7 @@
             *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Password cannot be empty"
                                                                    attributes:@{
                                                                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:8.0f],
-                                                                                NSForegroundColorAttributeName: [UIColor blueColor]
+                                                                                NSForegroundColorAttributeName: [UIColor redColor]
                                                                                 }];
             
             return NO;
@@ -145,7 +160,7 @@
             *errorAttributedText = [[NSAttributedString alloc] initWithString:@"Password cannot be less than 6 characters"
                                                                    attributes:@{
                                                                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:8.0f],
-                                                                                NSForegroundColorAttributeName: [UIColor blueColor]
+                                                                                NSForegroundColorAttributeName: [UIColor redColor]
                                                                                 }];
             return NO;
         }
@@ -155,5 +170,14 @@
     return YES;
 }
 
+- (void)validationClient:(FFValidationClient *)validationClient viewDidPass:(UIView *)view{
+    NSUInteger index = [self.fields indexOfObject:view];
+    ((UIView *)[self.lines objectAtIndex:index]).backgroundColor = [UIColor grayColor];
+}
+
+- (void)validationClient:(FFValidationClient *)validationClient viewDidFail:(UIView *)view withAlertLabel:(UILabel *)alertLabel{
+    NSUInteger index = [self.fields indexOfObject:view];
+    ((UIView *)[self.lines objectAtIndex:index]).backgroundColor = [UIColor redColor];
+}
 
 @end

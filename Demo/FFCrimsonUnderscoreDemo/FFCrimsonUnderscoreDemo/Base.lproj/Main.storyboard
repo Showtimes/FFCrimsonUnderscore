@@ -36,6 +36,22 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uI0-Zg-v4k">
+                                <rect key="frame" x="20" y="107" width="106" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baB-1p-tHT">
+                                <rect key="frame" x="164" y="107" width="106" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHd-XQ-ysL">
+                                <rect key="frame" x="20" y="151" width="250" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yeh-Dj-svX">
+                                <rect key="frame" x="20" y="195" width="250" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -44,6 +60,10 @@
                         <outlet property="email" destination="QQr-RQ-2ba" id="vJ0-64-88O"/>
                         <outlet property="firstName" destination="3hv-aj-2C4" id="Tvg-Xp-ueo"/>
                         <outlet property="lastName" destination="DCQ-MY-rhe" id="FPs-Oa-uqq"/>
+                        <outlet property="lineEmail" destination="lHd-XQ-ysL" id="aV5-MI-R0s"/>
+                        <outlet property="lineFirstName" destination="uI0-Zg-v4k" id="EFo-hA-dP7"/>
+                        <outlet property="lineLastName" destination="baB-1p-tHT" id="0Wh-GM-dqa"/>
+                        <outlet property="linePassword" destination="Yeh-Dj-svX" id="VC1-0I-5rT"/>
                         <outlet property="password" destination="pyE-Wf-3qJ" id="eP7-Kc-mKD"/>
                     </connections>
                 </viewController>
