@@ -5,6 +5,8 @@ This library aims to help to handle validation process for large input forms com
 
 ---------------
 
+![](https://s3.amazonaws.com/media.findandform.com/assets/images/misc/ffcu.gif)
+
 #Installation Process
 1. Copy `FFCrimsonUnderscore` to your project
 2. Add
